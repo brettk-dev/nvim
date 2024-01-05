@@ -31,4 +31,4 @@ vim.opt.scrolloff = 7
 vim.opt.cursorline = true
 
 -- Use the host clipboard
-vim.opt.clipboard = "unnamedplus,unnamed"
+vim.opt.clipboard = vim.opt.clipboard + "unnamedplus"
