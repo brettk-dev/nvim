@@ -46,6 +46,8 @@ local plugins = {
     lazy = false,
   },
   "ggandor/leap.nvim",
+  "windwp/nvim-ts-autotag",
+  "m4xshen/autoclose.nvim",
 }
 
 -- Load the plugins

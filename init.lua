@@ -9,7 +9,9 @@ require("my_lsp")
 require("my_treesitter")
 
 -- Simple plugin setups
+require("autoclose").setup()
 require("nvim-surround").setup()
+require("nvim-ts-autotag").setup()
 require("Comment").setup()
 
 vim.cmd("colorscheme solarized")
