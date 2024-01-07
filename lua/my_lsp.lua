@@ -47,7 +47,7 @@ end
 
 require("mason").setup({})
 require("mason-lspconfig").setup({
-  ensure_installed = { "eslint", "lua_ls", "tsserver", "volar" },
+  ensure_installed = { "elixirls", "eslint", "lua_ls", "tsserver", "volar" },
   handlers = {
     default_setup,
   },
@@ -98,6 +98,5 @@ null_ls.setup({
     null_ls.builtins.formatting.stylua,
     null_ls.builtins.formatting.prettier,
     -- null_ls.builtins.diagnostics.eslint, -- not needed with eslint-lsp
-    null_ls.builtins.completion.spell,
   },
 })

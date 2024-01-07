@@ -16,6 +16,7 @@ vim.opt.rtp:prepend(lazypath)
 local plugins = {
   -- Colors
   "altercation/vim-colors-solarized",
+  "folke/tokyonight.nvim",
   -- Utility
   "nvim-lua/plenary.nvim",
   -- LSP/Autocomplete
@@ -45,7 +46,6 @@ local plugins = {
     "numToStr/Comment.nvim",
     lazy = false,
   },
-  "ggandor/leap.nvim",
   "windwp/nvim-ts-autotag",
   "m4xshen/autoclose.nvim",
 }

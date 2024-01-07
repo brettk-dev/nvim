@@ -4,7 +4,6 @@ require("my_lazy")
 
 -- Plugin configurations
 require("my_fzf")
-require("my_leap")
 require("my_lsp")
 require("my_treesitter")
 
@@ -14,7 +13,7 @@ require("nvim-surround").setup()
 require("nvim-ts-autotag").setup()
 require("Comment").setup()
 
-vim.cmd("colorscheme solarized")
+vim.cmd("colorscheme tokyonight")
 
 -- Set tab width to 2 spaces
 vim.opt.tabstop = 2
