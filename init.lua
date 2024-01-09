@@ -31,5 +31,8 @@ vim.opt.scrolloff = 7
 -- Highlight the line the cursor is on
 vim.opt.cursorline = true
 
+-- Add a vertical indicator at column 80
+vim.opt.colorcolumn = "80"
+
 -- Use the host clipboard
 vim.opt.clipboard = vim.opt.clipboard + "unnamedplus"
