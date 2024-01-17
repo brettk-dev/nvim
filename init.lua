@@ -9,6 +9,7 @@ require("my_treesitter")
 
 -- Simple plugin setups
 require("autoclose").setup()
+require("lualine").setup()
 require("nvim-surround").setup()
 require("nvim-ts-autotag").setup()
 require("Comment").setup()

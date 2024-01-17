@@ -17,8 +17,14 @@ local plugins = {
 	-- Colors
 	"altercation/vim-colors-solarized",
 	"folke/tokyonight.nvim",
+	{
+		"nvim-lualine/lualine.nvim",
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+	},
+
 	-- Utility
 	"nvim-lua/plenary.nvim",
+
 	-- LSP/Autocomplete
 	"neovim/nvim-lspconfig",
 	"williamboman/mason.nvim",
@@ -27,17 +33,21 @@ local plugins = {
 	"hrsh7th/cmp-nvim-lsp",
 	"L3MON4D3/LuaSnip",
 	"nvimtools/none-ls.nvim",
+
 	-- Fuzzy file finder
 	"junegunn/fzf",
 	"junegunn/fzf.vim",
+
 	-- Syntax
 	{
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate",
 	},
 	"nvim-treesitter/nvim-treesitter-textobjects",
+
 	-- Markdown
 	{ "ellisonleao/glow.nvim", config = true, cmd = "Glow" },
+
 	-- Editing
 	{
 		"kylechui/nvim-surround",
