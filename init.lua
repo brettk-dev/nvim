@@ -5,16 +5,19 @@ require("my_lazy")
 -- Plugin configurations
 require("my_fzf")
 require("my_lsp")
+require("my_tabnine")
 require("my_treesitter")
 
 -- Simple plugin setups
 require("autoclose").setup()
+require("leap").create_default_mappings()
 require("lualine").setup()
 require("nvim-surround").setup()
 require("nvim-ts-autotag").setup()
 require("Comment").setup()
 
-vim.cmd("colorscheme tokyonight")
+vim.opt.background = "dark"
+vim.cmd("colorscheme gruvbox")
 
 -- Set tab width to 2 spaces
 vim.opt.tabstop = 2

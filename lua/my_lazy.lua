@@ -15,8 +15,11 @@ vim.opt.rtp:prepend(lazypath)
 -- The plugins list
 local plugins = {
 	-- Colors
-	"altercation/vim-colors-solarized",
-	"folke/tokyonight.nvim",
+	-- "altercation/vim-colors-solarized",
+	-- "folke/tokyonight.nvim",
+	"ellisonleao/gruvbox.nvim",
+
+	-- Status bar
 	{
 		"nvim-lualine/lualine.nvim",
 		dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -60,6 +63,10 @@ local plugins = {
 	},
 	"windwp/nvim-ts-autotag",
 	"m4xshen/autoclose.nvim",
+	"ggandor/leap.nvim",
+
+	-- AI
+	{ "codota/tabnine-nvim", build = "./dl_binaries.sh" },
 }
 
 -- Load the plugins
