@@ -23,7 +23,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 				vim.lsp.buf.format({
 					async = false,
 					filter = function(client)
-						local do_not_format = { "eslint", "volar" }
+						local do_not_format = { "volar" }
 						for _, value in pairs(do_not_format) do
 							if client.name == value then
 								return false
@@ -51,7 +51,7 @@ end
 
 require("mason").setup({})
 require("mason-lspconfig").setup({
-	ensure_installed = { "elixirls", "eslint", "lua_ls", "volar" },
+	ensure_installed = { "elixirls", "lua_ls", "volar" },
 	handlers = {
 		default_setup,
 	},
